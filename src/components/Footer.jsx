@@ -3,6 +3,9 @@
 // - Uses semantic <footer> and a <nav> for links
 // - Back to top link targets an element with id="top" (we'll add it in App.jsx)
 
+// src/components/Footer.jsx
+import kingThumbs from "../assets/king-thumbs-up.png";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -11,10 +14,12 @@ export default function Footer() {
       <div className="Footer-links" role="navigation" aria-label="Footer">
         <span className="Footer-brand">
           <img
-            src="/king-thumbs-up.png"
+            src={kingThumbs}
             alt="Thumbs up king"
             className="footer-king"
             loading="lazy"
+            width={54}
+            height={54}
           />
           <span className="footer-tagline">Only the best for you.</span>
         </span>

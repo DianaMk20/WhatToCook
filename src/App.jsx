@@ -5,6 +5,8 @@ import FilterBar from "./components/FilterBar.jsx";
 import RecipeList from "./components/RecipeList.jsx";
 import "./App.css";
 import Footer from "./components/Footer.jsx";
+import kingLove from "./assets/king-love.png";
+import kingThumbs from "./assets/king-thumbs-up.png";
 
 const FAV_KEY = "wtc.favorites.v1";
 const VIEW_KEY = "wtc.view.v1";
@@ -608,8 +610,8 @@ ul{padding-left:18px}
                 }}
               >
                 <img
-                  src="/king-love.png"
-                  alt=""
+                  src={kingLove}
+                  alt="Love"
                   className="kingIcon kingIcon--header"
                 />
                 Favorites
